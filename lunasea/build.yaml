@@ -6,8 +6,10 @@ targets:
       - $package$
     builders:
       # Hive
-      hive_generator:
+      hive_ce_generator:
         enabled: true
+      hive_ce_generator:hive_registrar_generator:
+        enabled: false
       # JSON Serializable
       json_serializable:
         enabled: true
